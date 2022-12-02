@@ -1,0 +1,26 @@
+ int page = 0;
+        int special = 0;
+        int pageCap = 1;
+        int index = 1;
+        int problemIndex =0;
+        
+        while(problemIndex < arr.size()) {
+            int prob = arr.get(problemIndex);
+            pageCap = 1;
+            page +=1;
+            for(index=1; index<=prob; index++){
+                if(pageCap >k) {
+                    page += 1;
+                    pageCap = 1;
+                    
+                    if(page==index){
+                        special++;
+                    }
+                } else if(page==index) {
+                    special+=1;
+                }
+                pageCap+= 1;
+            }
+            problemIndex += 1;
+        }
+        return special;

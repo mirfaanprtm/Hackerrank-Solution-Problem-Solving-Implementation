@@ -1,0 +1,37 @@
+public class No1 {
+	private static long taumBday(int b, int w, int bc, int wc, int z ){
+        
+		long taumBday = 0;
+        
+        if( bc < wc )
+        {
+            taumBday = taumBday + ( b * bc );
+            if( wc < z + bc )
+            {
+                taumBday = taumBday + ( w * wc );
+            }
+            else
+            {
+                taumBday = taumBday + ( w * ( z + bc ) );
+            }
+        }
+        else
+        {
+            taumBday = taumBday + ( w * wc );
+            if( bc < z + wc )
+            {
+                taumBday = taumBday + ( b * bc );
+            }
+            else
+            {
+                taumBday = taumBday + ( b * ( z + wc ) );
+            }   
+        }
+        return taumBday;
+	}
+	
+	public static void main(String[] args) {
+		No1 result = new No1();
+		System.out.println(result.taumBday(3, 5, 3, 4, 1));
+	}
+}

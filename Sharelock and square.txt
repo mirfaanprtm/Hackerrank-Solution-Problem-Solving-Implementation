@@ -1,0 +1,10 @@
+int x = 1;
+        int jumlah = 0;
+    
+        while(Math.pow(x,2)<=b){
+            if(Math.pow(x,2)>=a){
+                jumlah++;
+            }
+            x++;
+        }
+        return jumlah;

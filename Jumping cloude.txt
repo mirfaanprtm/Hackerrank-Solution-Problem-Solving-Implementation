@@ -1,0 +1,9 @@
+int result = 0;
+        
+        for(int i = 0; i < c.size()-1; i++){
+            result++;
+            if(i+2<c.size()&&c.get(i+2)!=1){
+                i++;
+            }
+        }
+        return result;

@@ -1,0 +1,15 @@
+String hasil = "13.09.";
+        if(year == 1918){
+            hasil = "26.09.";
+        }
+        if(year>1918){
+            if(year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)){
+                hasil = "12.09.";
+            }
+        }
+        if(year<1918){
+            if(year % 4 == 0){
+                hasil = "12.09.";
+            }
+        }
+        return hasil+year;

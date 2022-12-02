@@ -1,0 +1,35 @@
+int type1 = 0;
+        int type2 = 0;
+        int type3 = 0;
+        int type4 = 0;
+        int type5 = 0;
+        
+        for(int i = 0; i < arr.size(); i++){
+            if(arr.get(i) == 1){
+                type1++;
+            } else if (arr.get(i) == 2){
+                type2++;
+            } else if (arr.get(i) == 3){
+                type3++;
+            } else if (arr.get(i) == 4){
+                type4++;
+            } else if (arr.get(i) == 5){
+                type5++;
+            }
+            
+            
+        }
+        
+        int[] arrbird3 = { 
+            type1, type2, type3, type4,type5
+        };
+        int arrbird4 = 0;
+        int index = 0;
+        
+        for(int i = 0; i < arrbird3.length; i++){
+            if(arrbird4 < arrbird3[i]){
+                arrbird4 = arrbird3[i];
+                index = i + 1;
+            }
+        }
+        return index;

@@ -1,0 +1,11 @@
+int halaman = n;
+        int tujuan = p;
+        
+        if(n % 2 == 0){
+            halaman = n+1;
+        }
+        
+        int hasil1 = (halaman-tujuan)/2;
+        int hasil2 = tujuan/2;
+        
+        return Math.min(hasil1, hasil2);

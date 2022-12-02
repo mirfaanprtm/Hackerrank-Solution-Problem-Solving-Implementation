@@ -1,0 +1,10 @@
+ ArrayList<Integer> set = new ArrayList<>();
+        for(int i = 0; i < ar.size(); i++){
+            if(!set.contains(ar.get(i))){
+                set.add(ar.get(i));
+            } else {
+                pairs++;
+                set.remove(ar.get(i));
+            }
+        }
+        return pairs;

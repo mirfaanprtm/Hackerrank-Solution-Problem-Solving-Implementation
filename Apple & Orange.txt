@@ -1,0 +1,17 @@
+int jumlahApel = 0;
+        int jumlahJeruk = 0;
+        
+        for(int i=0;i<apples.size();i++){
+            int x = a + apples.get(i);
+            if(x>=s && x<=t){
+                jumlahApel++;
+            }
+        }
+        for(int j=0;j<oranges.size();j++){
+            int y = b + oranges.get(j);
+            if(y>=s && y<=t){
+                jumlahJeruk++;
+            }
+        }
+        System.out.println(jumlahApel);
+        System.out.println(jumlahJeruk);

@@ -1,0 +1,5 @@
+int prisioner = (m+s-1)%n;
+        if(prisioner == 0){
+            prisioner = n;
+        }
+        return prisioner;

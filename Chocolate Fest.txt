@@ -1,0 +1,9 @@
+int total_coklat = n/c;
+        int wrapper = total_coklat;
+        
+        while(wrapper>m || wrapper==m){
+            int free = wrapper/m;
+            total_coklat += free;
+            wrapper = free + (wrapper%m);
+        }
+        return total_coklat;
